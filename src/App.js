@@ -1,10 +1,15 @@
-import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Form from "./pages/Form"
+import Success from "./pages/Success"
+import React from 'react';
+
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <Routes>
+      <Route path="/" element={<Form />} />
+      <Route path="success" element={<Success />} />
+    </Routes>
   );
 }
 
