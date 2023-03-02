@@ -23,7 +23,7 @@ function Input(props) {
             inputProps={{
               name: props.name,
               required: props.required,
-              class:
+              className:
                 'bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-[#4c4c47] leading-tight focus:outline-none focus:bg-white focus:border-[#edf3e9]',
             }}
           />

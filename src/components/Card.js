@@ -3,8 +3,8 @@ import React from 'react';
 function Card(props) {
   return (
     <div
-      onClick={props.clicked}
-      className="max-w-xs max-h-96 p-6 transition-all duration-1000 dark:hover:bg-[#2d2d2a] rounded-md overflow-hidden shadow-lg bg-[#edf3e9] dark:bg-[#4c4c47] flex-col flex items-center justify-center"
+      onClick={() => props.clicked(props.id)}
+      className="max-w-xs max-h-96 p-6 transition-all duration-1000 dark:hover:bg-[#2d2d2a] rounded-3xl overflow-hidden shadow-lg bg-[#edf3e9] dark:bg-[#4c4c47] flex-col flex items-center justify-center"
     >
       {props.url && (
         <img

@@ -9,7 +9,7 @@ function Success() {
         alt=""
       />
       <div className="w-full max-w-lg py-16 px-10 rounded-lg bg-white text-[#4c4c47]">
-        <h1 className="text-5xl font-bold text-center mb-4">
+        <h1 className="text-4xl lg:text-5xl font-bold text-center mb-4">
           An email has been sent to you with the next steps!
         </h1>
         <h3 className="text-2xl text-center">See you on the course!</h3>

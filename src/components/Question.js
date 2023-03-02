@@ -5,7 +5,7 @@ function Question(props) {
   return (
     <div className="flex flex-col content-center justify-center my-auto">
       <div className="p-4">
-        <h1 className="text-center font-bold text-4xl mb-2 text-[#2d2d2a]">
+        <h1 className="text-center font-bold text-2xl lg:text-4xl my-4 text-[#4c4c47]">
           {props.title}
         </h1>
       </div>

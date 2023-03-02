@@ -5,17 +5,23 @@ import questions from '../questions';
 
 function Form() {
   const [page, setPage] = useState(0);
-  // const [formData, setFormData] = useState({
+  const [answer, setAnswer] = useState({});
 
-  // })
-
-  function handleClick() {
+  function handleClick(id) {
+    setAnswer({
+      ...answer,
+      [questions[page].answers[id].type]: questions[page].answers[id].title,
+    });
     setPage((curPage) => curPage + 1);
   }
 
+  React.useEffect(() => {
+    console.log(answer);
+  });
+
   function PageDisplay() {
     if (page === questions.length) {
-      return <Register />;
+      return <Register answers={answer} />;
     } else {
       return (
         <Question
@@ -30,13 +36,17 @@ function Form() {
 
   return (
     <>
-      <div className="bg-[#c0d9c2] w-screen min-h-screen">
+      <div
+        className={`${
+          page === questions.length ? 'bg-white' : 'bg-[#c0d9c2]'
+        } md:bg-[#c0d9c2] w-screen min-h-screen`}
+      >
         <img
           className="w-[150px] p-4 absolute left-0 top-0"
           src="/images/logo/logo-light.png"
           alt=""
         />
-        <div className="lg:h-screen h-full bg-[#c0d9c2] flex flex-col items-center	justify-center pt-24 pb-8">
+        <div className="lg:h-screen h-full flex flex-col items-center	justify-center pt-24 pb-8">
           <div className="progress-bar"></div>
           <div className="form-container">{PageDisplay()}</div>
           <div className="w-[70%] footer flex justify-end gap-10 mt-8 text-[#2d2d2a] font-bold">

@@ -9,6 +9,7 @@ const questions = [
         description:
           'A course where you will learn different techniques to apply your makeup.',
         url: '/images/makeup.webp',
+        type: 'course',
       },
       {
         id: 2,
@@ -16,6 +17,7 @@ const questions = [
         description:
           'In this course you will learn how to have a healthy relationship with food without feeling hunger in the process.',
         url: '/images/food.jpeg',
+        type: 'course',
       },
       {
         id: 3,
@@ -23,6 +25,7 @@ const questions = [
         description:
           'Learn how to have the perfect routine to protect your skin from the sun, which will also prevent early aging of your skin.',
         url: '/images/skincare.webp',
+        type: 'course',
       },
     ],
   },
@@ -35,24 +38,28 @@ const questions = [
         title: '18-25',
         description: '',
         url: '',
+        type: 'age',
       },
       {
         id: 2,
         title: '26-35',
         description: '',
         url: '',
+        type: 'age',
       },
       {
         id: 3,
         title: '36-45',
         description: '',
         url: '',
+        type: 'age',
       },
       {
         id: 4,
         title: '46+',
         description: '',
         url: '',
+        type: 'age',
       },
     ],
   },
